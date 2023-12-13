@@ -1,0 +1,16 @@
+{
+  "name": "manualexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin",
+    "dev": "nodemon ./bin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.18.2"
+  }
+}
