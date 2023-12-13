@@ -1,39 +1,22 @@
 import express from "express";
+import { join } from "path";
 import { parse } from "querystring";
 // import { homePage, food, meet } from "./content";
 const app = express()
 
-const isPalindrome = str => {
-    let trimAndPrepare = str.toLowerCase().trim().replace(/[\W_]/g, "")
-    return trimAndPrepare === trimAndPrepare.split("").reverse().join("")
-}
-
-app.get("/", (req, res) => {
-    res.status(200).send(homePage)
-})
-app.get("/food", (req, res) => {
-    res.status(200).send(food)
-})
-app.get("/meet", (req, res) => {
-    res.status(200).send(meet)
-})
+// Middleware (serving static assest)
+app.use("/assets", express.static(join(__dirname, "public")))
 
 app.get("/", (req, res) => {
     res.status(200).send("<h1>Blog Chef says Hello!</h1>")
 })
 
-app.post("/palindrome", (req, res) => {
-    let body = "";
-    req.on('data', data => {
-        body += data
-    })
-
-    req.on("end", () => {
-        let { word } = parse(body)
-        res.send(word ? {word, isPalindrome: isPalindrome(word)} : {message: "No word supplied!"})
-    })
-
-   
+// Serving Static Assets and HTML Files
+app.get("/admin/login", (req, res) => {
+    res.sendFile(join(__dirname, "views", "login.html"))
+}).post("/admin/login", (req, res) => {
+    res.send("Handle login here")
 })
+
 
 app.listen(3000, () => console.log("Blog chef is cooking on port 3000"))    
