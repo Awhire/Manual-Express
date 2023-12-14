@@ -15,7 +15,9 @@ app.get("/", (req, res) => {
 // Serving Static Assets and HTML Files
 app
     .get("/admin/login", (req, res) => res.render("login"))
-    .post("/admin/login", (req, res) => res.send("Login API"))
+    .post("/admin/login", (req, res) => res.redirect("/admin/dashboard"))
 
+app.get("/admin/dashboard", (req, res) => res.render("dashboard"))
+app.get("/admin/logout", (req, res) => res.redirect("/admin/login"))
 
 app.listen(3000, () => console.log("Blog chef is cooking on port 3000"))     
