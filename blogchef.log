@@ -108,3 +108,17 @@ POST - /admin/login - Mon, 18 Dec 2023 08:01:20 GMT - 1.384 ms
 GET - /admin/dashboard - Mon, 18 Dec 2023 08:01:20 GMT - 162.782 ms
 GET - /post - Mon, 18 Dec 2023 08:01:27 GMT - 3.540 ms
 GET - /admin/dashboard - Mon, 18 Dec 2023 08:01:37 GMT - 109.858 ms
+GET - /post - Mon, 18 Dec 2023 16:24:11 GMT - 17.896 ms
+GET - /posts - Mon, 18 Dec 2023 16:24:16 GMT - 0.818 ms
+GET - /admin/dashboard - Mon, 18 Dec 2023 16:24:25 GMT - 27.448 ms
+GET - /admin/login - Mon, 18 Dec 2023 16:24:26 GMT - 198.252 ms
+GET - /api/posts - Tue, 19 Dec 2023 12:39:16 GMT - 11.431 ms
+GET - /api/posts/2 - Tue, 19 Dec 2023 12:39:42 GMT - 5.905 ms
+GET - /api/post/2 - Tue, 19 Dec 2023 12:39:52 GMT - 1.361 ms
+POST - /api/post/5 - Tue, 19 Dec 2023 12:43:29 GMT - 1.022 ms
+POST - /api/post - Tue, 19 Dec 2023 12:43:56 GMT - 1.365 ms
+POST - /api/post - Tue, 19 Dec 2023 12:44:17 GMT - 5.363 ms
+POST - /api/posts - Tue, 19 Dec 2023 12:44:27 GMT - 2.845 ms
+GET - /api/posts - Tue, 19 Dec 2023 12:44:34 GMT - 0.645 ms
+DELETE - /api/post/12 - Tue, 19 Dec 2023 12:45:23 GMT - 0.682 ms
+DELETE - /api - Tue, 19 Dec 2023 12:52:13 GMT - 5.837 ms

@@ -1,10 +1,7 @@
 export default (req, res) => {
-    const posts = [
-        { id: 1, title: "First post" },
-        { id: 2, title: "Second post" },
-    ];
+    const postId = req.params.postId;
 
     res.json({
-        posts
-    })
-}
+        post: postId
+    });
+};
