@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin",
-    "dev": "nodemon ./bin"
+    "dev": "nodemon -r dotenv/config ./bin"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
+    "dotenv": "^16.3.1",
     "esm": "^3.2.25",
     "express": "^4.18.2",
     "express-session": "^1.17.3",

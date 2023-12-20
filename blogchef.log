@@ -122,3 +122,6 @@ POST - /api/posts - Tue, 19 Dec 2023 12:44:27 GMT - 2.845 ms
 GET - /api/posts - Tue, 19 Dec 2023 12:44:34 GMT - 0.645 ms
 DELETE - /api/post/12 - Tue, 19 Dec 2023 12:45:23 GMT - 0.682 ms
 DELETE - /api - Tue, 19 Dec 2023 12:52:13 GMT - 5.837 ms
+POST - /api - Tue, 19 Dec 2023 13:28:08 GMT - 7.566 ms
+POST - /api/post - Tue, 19 Dec 2023 13:28:18 GMT - 1.377 ms
+POST - /api/post - Tue, 19 Dec 2023 13:32:33 GMT - 0.742 ms
